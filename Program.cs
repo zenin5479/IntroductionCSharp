@@ -35,11 +35,11 @@ namespace IntroductionCSharp
          Console.WriteLine("Программа определения максимального числа из трех целых чисел");
          Console.WriteLine("--------------------------------------------------===========");
          Console.WriteLine("Введите первое число:");
-         double a1 = Convert.ToDouble(Console.ReadLine());
+         int a1 = Convert.ToInt32(Console.ReadLine());
          Console.WriteLine("Введите второе число:");
-         double a2 = Convert.ToDouble(Console.ReadLine());
+         int a2 = Convert.ToInt32(Console.ReadLine());
          Console.WriteLine("Введите третье число:");
-         double a3 = Convert.ToDouble(Console.ReadLine());
+         int a3 = Convert.ToInt32(Console.ReadLine());
          Console.WriteLine("Первое число = " + a1 + ";");
          Console.WriteLine("Второе число = " + a2 + ";");
          Console.WriteLine("Третье число = " + a3 + ";");
@@ -64,14 +64,14 @@ namespace IntroductionCSharp
          Console.WriteLine("-------------------------------------------");
          Console.WriteLine("Программа определения четности целого числа");
          Console.WriteLine("-------------------------------------------");
-         Console.WriteLine("Введите целое число:");
+         Console.WriteLine("Введите целое число: ");
          string sr = Console.ReadLine();
          int s = 0;
          while (s == 0)
          {
             if (sr.Contains(","))
             {
-               Console.WriteLine("введите целое, а не дробное число");
+               Console.WriteLine("Введите целое, а не дробное число");
                sr = Console.ReadLine();
                s = 0;
             }
