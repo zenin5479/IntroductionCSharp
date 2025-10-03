@@ -83,23 +83,23 @@ namespace IntroductionCSharp
          else
          {
             if (x % 2 == 0)
-               Console.WriteLine("число  " + x + "  - является четным");
+               Console.WriteLine("Число " + x + " - является четным");
             else
-               Console.WriteLine("число  " + x + "  - является нечетным");
+               Console.WriteLine("Число " + x + " - является нечетным");
          }
 
          Console.WriteLine("-------------------------------------------------------------------------");
          Console.WriteLine("Программа вывода всех четных чисел от 1 до N, включая отрицательные числа");
          Console.WriteLine("-------------------------------------------------------------------------");
          Console.WriteLine("Введите число целое N: ");
-         int N = Convert.ToInt32(Console.ReadLine());
+         int n = Convert.ToInt32(Console.ReadLine());
          Console.WriteLine("Ряд четных чисел: ");
-         if (N == 0) Console.WriteLine("N должно быть отличным от 0");
+         if (n == 0) Console.WriteLine("N должно быть отличным от 0");
          else
          {
-            if (N > 0)
+            if (n > 0)
             {
-               for (int i = 1; i <= N; i++)
+               for (int i = 1; i <= n; i++)
                {
                   if (i % 2 == 0)
                      Console.WriteLine(i);
@@ -107,7 +107,7 @@ namespace IntroductionCSharp
             }
             else
             {
-               for (int i = -1; i >= N; i--)
+               for (int i = -1; i >= n; i--)
                {
                   if (i % 2 == 0)
                      Console.WriteLine(i);
