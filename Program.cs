@@ -9,20 +9,26 @@ namespace IntroductionCSharp
          Console.WriteLine("-------------------------------------------------------------");
          Console.WriteLine("Программа определения максимального числа из двух целых чисел");
          Console.WriteLine("-------------------------------------------------------------");
-         Console.WriteLine("Введите первое число:");
+         Console.WriteLine("Введите первое число: ");
          double a = Convert.ToDouble(Console.ReadLine());
-         Console.WriteLine("Введите второе число:");
+         Console.WriteLine("Введите второе число: ");
          double b = Convert.ToDouble(Console.ReadLine());
          Console.WriteLine("Первое число = " + a + ";");
          Console.WriteLine("Второе число = " + b + ";");
          if (a == b)
+         {
             Console.WriteLine("Числа равны: {0} = {1}", a, b);
+         }
          else
          {
             if (a > b)
-               Console.WriteLine("max = " + a);
+            {
+               Console.WriteLine("Максимальное число = " + a);
+            }
             else
-               Console.WriteLine("max = " + b);
+            {
+               Console.WriteLine("Максимальное число = " + b);
+            }
          }
 
          Console.WriteLine("");
