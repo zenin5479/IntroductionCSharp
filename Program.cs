@@ -88,7 +88,6 @@ namespace IntroductionCSharp
                Console.WriteLine("число  " + x + "  - является нечетным");
          }
 
-         Console.WriteLine("");
          Console.WriteLine("--------------------------------------------------");
          Console.WriteLine("Прогнрамма вывода всех четных чисел от 1 до N, включая отрицательные числа");
          Console.WriteLine("--------------------------------------------------");
