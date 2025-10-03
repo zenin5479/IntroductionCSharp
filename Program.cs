@@ -40,12 +40,26 @@ namespace IntroductionCSharp
          double a2 = Convert.ToDouble(Console.ReadLine());
          Console.WriteLine("Введите третье число:");
          double a3 = Convert.ToDouble(Console.ReadLine());
-         Console.WriteLine("a = " + a1 + ";  " + "b = " + a2 + ";  " + "c = " + a3);
+         Console.WriteLine("Первое число = " + a1 + ";");
+         Console.WriteLine("Второе число = " + a2 + ";");
+         Console.WriteLine("Третье число = " + a3 + ";");
          double max = a1;
-         if (a1 > max) max = a1;
-         if (a2 > max) max = a2;
-         if (a3 > max) max = a3;
-         Console.WriteLine("max = " + max);
+         if (a1 > max)
+         {
+            max = a1;
+         }
+
+         if (a2 > max)
+         {
+            max = a2;
+         }
+
+         if (a3 > max)
+         {
+            max = a3;
+         }
+
+         Console.WriteLine("Максимальное число = " + max);
 
          Console.WriteLine("");
          Console.WriteLine("--------------------------------------------------");
