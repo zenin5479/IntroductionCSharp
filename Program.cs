@@ -91,10 +91,10 @@ namespace IntroductionCSharp
          Console.WriteLine("-------------------------------------------------------------------------");
          Console.WriteLine("Программа вывода всех четных чисел от 1 до N, включая отрицательные числа");
          Console.WriteLine("-------------------------------------------------------------------------");
-         Console.WriteLine("Введите число целое  N ");
+         Console.WriteLine("Введите число целое N: ");
          int N = Convert.ToInt32(Console.ReadLine());
-         Console.WriteLine("ряд четных чисел:");
-         if (N == 0) Console.WriteLine(" N должно быть отличным от 0");
+         Console.WriteLine("Ряд четных чисел: ");
+         if (N == 0) Console.WriteLine("N должно быть отличным от 0");
          else
          {
             if (N > 0)
