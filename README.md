@@ -1,1 +1,1 @@
-# IntroductionCSharp
+# Знакомство с языком программирования C Sharp
