@@ -4,7 +4,7 @@ namespace IntroductionCSharp
 {
    internal class Program
    {
-      static void Main(string[] args)
+      static void Main()
       {
          Console.WriteLine("--------------------------------------------------");
          Console.WriteLine("Программа определения максимального числа из двух");
@@ -64,7 +64,7 @@ namespace IntroductionCSharp
             }
             else s = 1;
          }
-         int x = Int32.Parse(sr);
+         int x = int.Parse(sr);
          if (x == 0)
             Console.WriteLine("Число 0 не является четным и нечетным числом");
          else
