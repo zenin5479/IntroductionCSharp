@@ -61,9 +61,9 @@ namespace IntroductionCSharp
 
          Console.WriteLine("Максимальное число = " + max);
 
-         Console.WriteLine("-------------------------------------------------");
-         Console.WriteLine("Программа определения четности числа целого числа");
-         Console.WriteLine("-------------------------------------------------");
+         Console.WriteLine("-------------------------------------------");
+         Console.WriteLine("Программа определения четности целого числа");
+         Console.WriteLine("-------------------------------------------");
          Console.WriteLine("Введите целое число:");
          string sr = Console.ReadLine();
          int s = 0;
