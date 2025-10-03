@@ -31,7 +31,6 @@ namespace IntroductionCSharp
             }
          }
 
-         Console.WriteLine("");
          Console.WriteLine("--------------------------------------------------");
          Console.WriteLine("Программа определения максимального числа из трех");
          Console.WriteLine("--------------------------------------------------");
