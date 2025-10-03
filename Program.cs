@@ -13,9 +13,10 @@ namespace IntroductionCSharp
          double a = Convert.ToDouble(Console.ReadLine());
          Console.WriteLine("Введите второе число:");
          double b = Convert.ToDouble(Console.ReadLine());
-         Console.WriteLine("a = " + a + ";  " + "b = " + b);
+         Console.WriteLine("Первое число = " + a + ";");
+         Console.WriteLine("Второе число = " + b + ";");
          if (a == b)
-            Console.WriteLine("числа равны: a = b = " + a);
+            Console.WriteLine("Числа равны: {0} = {1}", a, b);
          else
          {
             if (a > b)
