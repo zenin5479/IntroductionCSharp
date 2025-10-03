@@ -41,10 +41,7 @@ namespace IntroductionCSharp
          if (a3 > max) max = a3;
          Console.WriteLine("max = " + max);
 
-
          Console.WriteLine("");
-
-
          Console.WriteLine("--------------------------------------------------");
          Console.WriteLine("Программа определения четности числа");
          Console.WriteLine("--------------------------------------------------");
@@ -72,9 +69,7 @@ namespace IntroductionCSharp
                Console.WriteLine("число  " + x + "  - является нечетным");
          }
 
-
          Console.WriteLine("");
-
          Console.WriteLine("--------------------------------------------------");
          Console.WriteLine("Прогнрамма вывода всех четных чисел от 1 до N, включая отрицательные числа");
          Console.WriteLine("--------------------------------------------------");
