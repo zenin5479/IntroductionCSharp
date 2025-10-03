@@ -24,10 +24,7 @@ namespace IntroductionCSharp
                Console.WriteLine("max = " + b);
          }
 
-
          Console.WriteLine("");
-
-
          Console.WriteLine("--------------------------------------------------");
          Console.WriteLine("Программа определения максимального числа из трех");
          Console.WriteLine("--------------------------------------------------");
