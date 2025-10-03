@@ -31,9 +31,9 @@ namespace IntroductionCSharp
             }
          }
 
-         Console.WriteLine("--------------------------------------------------");
-         Console.WriteLine("Программа определения максимального числа из трех");
-         Console.WriteLine("--------------------------------------------------");
+         Console.WriteLine("-------------------------------------------------------------");
+         Console.WriteLine("Программа определения максимального числа из трех целых чисел");
+         Console.WriteLine("--------------------------------------------------===========");
          Console.WriteLine("Введите первое число:");
          double a1 = Convert.ToDouble(Console.ReadLine());
          Console.WriteLine("Введите второе число:");
