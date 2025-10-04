@@ -77,15 +77,19 @@ namespace IntroductionCSharp
             }
             else s = 1;
          }
-         int x = int.Parse(sr);
-         if (x == 0)
-            Console.WriteLine("Число 0 не является четным и нечетным числом");
-         else
+
+         if (sr != null)
          {
-            if (x % 2 == 0)
-               Console.WriteLine("Число " + x + " - является четным");
+            int x = int.Parse(sr);
+            if (x == 0)
+               Console.WriteLine("Число 0 не является четным и нечетным числом");
             else
-               Console.WriteLine("Число " + x + " - является нечетным");
+            {
+               if (x % 2 == 0)
+                  Console.WriteLine("Число " + x + " - является четным");
+               else
+                  Console.WriteLine("Число " + x + " - является нечетным");
+            }
          }
 
          Console.WriteLine("-------------------------------------------------------------------------");
