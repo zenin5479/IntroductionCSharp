@@ -69,7 +69,7 @@ namespace IntroductionCSharp
          int s = 0;
          while (s == 0)
          {
-            if (sr != null && sr.Contains(","))
+            if (sr.Contains(","))
             {
                Console.WriteLine("Введите целое, а не дробное число");
                sr = Console.ReadLine();
@@ -77,19 +77,15 @@ namespace IntroductionCSharp
             }
             else s = 1;
          }
-
-         if (sr != null)
+         int x = int.Parse(sr);
+         if (x == 0)
+            Console.WriteLine("Число 0 не является четным и нечетным числом");
+         else
          {
-            int x = int.Parse(sr);
-            if (x == 0)
-               Console.WriteLine("Число 0 не является четным и нечетным числом");
+            if (x % 2 == 0)
+               Console.WriteLine("Число " + x + " - является четным");
             else
-            {
-               if (x % 2 == 0)
-                  Console.WriteLine("Число " + x + " - является четным");
-               else
-                  Console.WriteLine("Число " + x + " - является нечетным");
-            }
+               Console.WriteLine("Число " + x + " - является нечетным");
          }
 
          Console.WriteLine("-------------------------------------------------------------------------");
