@@ -103,7 +103,10 @@ namespace IntroductionCSharp
          Console.WriteLine("Введите число целое N: ");
          int n = Convert.ToInt32(Console.ReadLine());
          Console.WriteLine("Ряд четных чисел: ");
-         if (n == 0) Console.WriteLine("N должно быть отличным от 0");
+         if (n == 0)
+         {
+            Console.WriteLine("N должно быть отличным от 0");
+         }
          else
          {
             if (n > 0)
