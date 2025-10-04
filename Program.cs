@@ -43,7 +43,7 @@ namespace IntroductionCSharp
          Console.WriteLine("Первое число = " + a1 + ";");
          Console.WriteLine("Второе число = " + a2 + ";");
          Console.WriteLine("Третье число = " + a3 + ";");
-         double max = a1;
+         int max = a1;
          if (a1 > max)
          {
             max = a1;
@@ -92,7 +92,9 @@ namespace IntroductionCSharp
                Console.WriteLine("Число " + x + " - является четным");
             }
             else
+            {
                Console.WriteLine("Число " + x + " - является нечетным");
+            }
          }
 
          Console.WriteLine("-------------------------------------------------------------------------");
