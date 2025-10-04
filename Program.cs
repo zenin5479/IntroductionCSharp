@@ -66,7 +66,7 @@ namespace IntroductionCSharp
          Console.WriteLine("-------------------------------------------");
          Console.WriteLine("Введите целое число: ");
          string sr = Console.ReadLine();
-         if (sr != null && sr.Length != 0)
+         if (sr != null)
          {
             int s = 0;
             while (s == 0)
@@ -82,6 +82,9 @@ namespace IntroductionCSharp
                   s = 1;
                }
             }
+
+
+
          }
 
          int x = int.Parse(sr);
