@@ -69,7 +69,7 @@ namespace IntroductionCSharp
          int s = 0;
          while (s == 0)
          {
-            if (sr.Contains(","))
+            if (sr != null && sr.Contains(","))
             {
                Console.WriteLine("Введите целое, а не дробное число");
                sr = Console.ReadLine();
