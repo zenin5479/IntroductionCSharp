@@ -9,9 +9,9 @@ namespace IntroductionCSharp
          Console.WriteLine("-------------------------------------------------------------");
          Console.WriteLine("Программа определения максимального числа из двух целых чисел");
          Console.WriteLine("-------------------------------------------------------------");
-         Console.WriteLine("Введите первое число: ");
+         Console.WriteLine("Введите первое число: "); //
          int a = Convert.ToInt32(Console.ReadLine());
-         Console.WriteLine("Введите второе число: ");
+         Console.WriteLine("Введите второе число: "); //
          int b = Convert.ToInt32(Console.ReadLine());
          Console.WriteLine("Первое число = " + a + ";");
          Console.WriteLine("Второе число = " + b + ";");
