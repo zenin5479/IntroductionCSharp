@@ -66,20 +66,24 @@ namespace IntroductionCSharp
          Console.WriteLine("-------------------------------------------");
          Console.WriteLine("Введите целое число: ");
          string sr = Console.ReadLine();
-         int s = 0;
-         while (s == 0)
+         if (sr != null && sr.Length != 0)
          {
-            if (sr.Contains(","))
+            int s = 0;
+            while (s == 0)
             {
-               Console.WriteLine("Введите целое, а не дробное число");
-               sr = Console.ReadLine();
-               s = 0;
-            }
-            else
-            {
-               s = 1;
+               if (sr.Contains(","))
+               {
+                  Console.WriteLine("Введите целое, а не дробное число");
+                  sr = Console.ReadLine();
+                  s = 0;
+               }
+               else
+               {
+                  s = 1;
+               }
             }
          }
+
          int x = int.Parse(sr);
          if (x == 0)
          {
