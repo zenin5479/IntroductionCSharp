@@ -75,7 +75,10 @@ namespace IntroductionCSharp
                sr = Console.ReadLine();
                s = 0;
             }
-            else s = 1;
+            else
+            {
+               s = 1;
+            }
          }
          int x = int.Parse(sr);
          if (x == 0)
