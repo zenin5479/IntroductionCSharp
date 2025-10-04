@@ -66,44 +66,36 @@ namespace IntroductionCSharp
          Console.WriteLine("-------------------------------------------");
          Console.WriteLine("Введите целое число: ");
          string sr = Console.ReadLine();
-         if (sr != null)
+         int s = 0;
+         while (s == 0)
          {
-            int s = 0;
-            while (s == 0)
+            if (sr.Contains(","))
             {
-               if (sr != null && sr.Contains(","))
-               {
-                  Console.WriteLine("Введите целое, а не дробное число");
-                  sr = Console.ReadLine();
-                  s = 0;
-               }
-               else
-               {
-                  s = 1;
-               }
+               Console.WriteLine("Введите целое, а не дробное число");
+               sr = Console.ReadLine();
+               s = 0;
             }
-
-            if (sr != null)
+            else
             {
-               int x = int.Parse(sr);
-               if (x == 0)
-               {
-                  Console.WriteLine("Число 0 не является четным и нечетным числом");
-               }
-               else
-               {
-                  if (x % 2 == 0)
-                  {
-                     Console.WriteLine("Число " + x + " - является четным");
-                  }
-                  else
-                  {
-                     Console.WriteLine("Число " + x + " - является нечетным");
-                  }
-               }
+               s = 1;
             }
          }
-
+         int x = int.Parse(sr);
+         if (x == 0)
+         {
+            Console.WriteLine("Число 0 не является четным и нечетным числом");
+         }
+         else
+         {
+            if (x % 2 == 0)
+            {
+               Console.WriteLine("Число " + x + " - является четным");
+            }
+            else
+            {
+               Console.WriteLine("Число " + x + " - является нечетным");
+            }
+         }
 
          Console.WriteLine("-------------------------------------------------------------------------");
          Console.WriteLine("Программа вывода всех четных чисел от 1 до N, включая отрицательные числа");
