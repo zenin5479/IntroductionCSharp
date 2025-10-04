@@ -82,7 +82,9 @@ namespace IntroductionCSharp
          }
          int x = int.Parse(sr);
          if (x == 0)
+         {
             Console.WriteLine("Число 0 не является четным и нечетным числом");
+         }
          else
          {
             if (x % 2 == 0)
