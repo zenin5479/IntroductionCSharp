@@ -13,8 +13,6 @@ namespace IntroductionCSharp
          int a = Convert.ToInt32(Console.ReadLine());
          Console.Write("Введите второе число: "); //
          int b = Convert.ToInt32(Console.ReadLine());
-         Console.WriteLine("Первое число = " + a + ";");
-         Console.WriteLine("Второе число = " + b + ";");
          if (a == b)
          {
             Console.WriteLine("Числа равны: {0} = {1}", a, b);
