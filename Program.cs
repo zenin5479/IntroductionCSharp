@@ -59,7 +59,7 @@ namespace IntroductionCSharp
          Console.WriteLine("-------------------------------------------");
          Console.WriteLine("Программа определения четности целого числа");
          Console.WriteLine("-------------------------------------------");
-         Console.WriteLine("Введите целое число: ");
+         Console.Write("Введите целое число: ");
          string sr = Console.ReadLine();
          int s = 0;
          while (s == 0)
