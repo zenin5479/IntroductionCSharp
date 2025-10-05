@@ -32,11 +32,11 @@ namespace IntroductionCSharp
          Console.WriteLine("-------------------------------------------------------------");
          Console.WriteLine("Программа определения максимального числа из трех целых чисел");
          Console.WriteLine("--------------------------------------------------===========");
-         Console.Write("Введите первое число:");
+         Console.Write("Введите первое число: ");
          int a1 = Convert.ToInt32(Console.ReadLine());
-         Console.Write("Введите второе число:");
+         Console.Write("Введите второе число: ");
          int a2 = Convert.ToInt32(Console.ReadLine());
-         Console.Write("Введите третье число:");
+         Console.Write("Введите третье число: ");
          int a3 = Convert.ToInt32(Console.ReadLine());
          int max = a1;
          if (a1 > max)
@@ -54,7 +54,7 @@ namespace IntroductionCSharp
             max = a3;
          }
 
-         Console.WriteLine("Максимальное число = " + max);
+         Console.WriteLine("Максимальное число: " + max);
 
          Console.WriteLine("-------------------------------------------");
          Console.WriteLine("Программа определения четности целого числа");
