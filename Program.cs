@@ -21,22 +21,22 @@ namespace IntroductionCSharp
          {
             if (a > b)
             {
-               Console.WriteLine("Максимальное число = " + a);
+               Console.WriteLine("Максимальное число: " + a);
             }
             else
             {
-               Console.WriteLine("Максимальное число = " + b);
+               Console.WriteLine("Максимальное число: " + b);
             }
          }
 
          Console.WriteLine("-------------------------------------------------------------");
          Console.WriteLine("Программа определения максимального числа из трех целых чисел");
          Console.WriteLine("--------------------------------------------------===========");
-         Console.WriteLine("Введите первое число:");
+         Console.Write("Введите первое число:");
          int a1 = Convert.ToInt32(Console.ReadLine());
-         Console.WriteLine("Введите второе число:");
+         Console.Write("Введите второе число:");
          int a2 = Convert.ToInt32(Console.ReadLine());
-         Console.WriteLine("Введите третье число:");
+         Console.Write("Введите третье число:");
          int a3 = Convert.ToInt32(Console.ReadLine());
          Console.WriteLine("Первое число = " + a1 + ";");
          Console.WriteLine("Второе число = " + a2 + ";");
