@@ -95,9 +95,9 @@ namespace IntroductionCSharp
          Console.WriteLine("-------------------------------------------------------------------------");
          Console.WriteLine("Программа вывода всех четных чисел от 1 до N, включая отрицательные числа");
          Console.WriteLine("-------------------------------------------------------------------------");
-         Console.WriteLine("Введите число целое N: ");
+         Console.Write("Введите число целое N: ");
          int n = Convert.ToInt32(Console.ReadLine());
-         Console.WriteLine("Ряд четных чисел: ");
+         Console.Write("Ряд четных чисел: ");
          if (n == 0)
          {
             Console.WriteLine("N должно быть отличным от 0");
