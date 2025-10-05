@@ -38,9 +38,6 @@ namespace IntroductionCSharp
          int a2 = Convert.ToInt32(Console.ReadLine());
          Console.Write("Введите третье число:");
          int a3 = Convert.ToInt32(Console.ReadLine());
-         Console.WriteLine("Первое число = " + a1 + ";");
-         Console.WriteLine("Второе число = " + a2 + ";");
-         Console.WriteLine("Третье число = " + a3 + ";");
          int max = a1;
          if (a1 > max)
          {
