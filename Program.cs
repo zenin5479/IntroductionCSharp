@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Text;
 
 namespace IntroductionCSharp
 {
@@ -6,6 +8,109 @@ namespace IntroductionCSharp
    {
       static void Main()
       {
+         int v;
+         do
+         {
+            Console.WriteLine("Введите значение элемента:");
+            int.TryParse(Console.ReadLine(), out v);
+            //v = Convert.ToInt32(Console.ReadLine());
+            if (v <= -100 || v >= 100)
+            {
+               Console.WriteLine("Введено не верное значение");
+            }
+         } while (v <= -100 || v >= 100);
+
+         string stroka = null;
+         int[] arrayInt = { };
+         FileStream filestream = File.Open(path, FileMode.Open, FileAccess.Read);
+         if (filestream == null || filestream.Length == 0)
+         {
+            Console.WriteLine("Ошибка при открытии файла для чтения");
+         }
+         else
+         {
+            StreamReader streamReader = new StreamReader(filestream);
+            while (streamReader.Peek() >= 0)
+            {
+               stroka = streamReader.ReadLine();
+               //Console.WriteLine(stroka);
+            }
+
+            // Определение количества столбцов в строке разделением строки на подстроки по пробелу
+            // Символ пробела
+            char symbolSpace = ' ';
+            // Счетчик символов
+            int symbolСount = 0;
+            // Количество столбцов в строке
+            int сolumn = 0;
+            if (stroka != null)
+            {
+               //Console.WriteLine("Исходный строковый массив:");
+               //Console.WriteLine(stroka);
+               while (symbolСount < stroka.Length)
+               {
+                  if (symbolSpace == stroka[symbolСount])
+                  {
+                     сolumn++;
+                  }
+
+                  if (symbolСount == stroka.Length - 1)
+                  {
+                     сolumn++;
+                  }
+
+                  symbolСount++;
+               }
+
+               //Console.WriteLine("Количество столбцов {0}", сolumn);
+
+               // Разделение строки на подстроки по пробелу и конвертация подстрок в int
+               //Console.WriteLine("Одномерный целочисленный массив:");
+               // Одномерный целочисленный массив
+               arrayInt = new int[сolumn];
+               // Построитель строк
+               StringBuilder stringModified = new StringBuilder();
+               // Счетчик символов обнуляем
+               symbolСount = 0;
+               // Количество столбцов в строке обнуляем
+               сolumn = 0;
+               while (symbolСount < stroka.Length)
+               {
+                  if (symbolSpace != stroka[symbolСount])
+                  {
+                     stringModified.Append(stroka[symbolСount]);
+                  }
+                  else
+                  {
+                     string subLine = stringModified.ToString();
+                     arrayInt[сolumn] = Convert.ToInt32(subLine);
+                     //Console.Write(arrayInt[сolumn] + " ");
+                     stringModified.Clear();
+                     сolumn++;
+                  }
+
+                  if (symbolСount == stroka.Length - 1)
+                  {
+                     string subLine = stringModified.ToString();
+                     arrayInt[сolumn] = Convert.ToInt32(subLine);
+                     //Console.Write(arrayInt[сolumn]);
+                     stringModified.Clear();
+                     сolumn++;
+                  }
+
+                  symbolСount++;
+               }
+            }
+
+            streamReader.Close();
+            //Console.WriteLine();
+         }
+
+
+
+
+
+
          Console.WriteLine("-------------------------------------------------------------");
          Console.WriteLine("Программа определения максимального числа из двух целых чисел");
          Console.WriteLine("-------------------------------------------------------------");
