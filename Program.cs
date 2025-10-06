@@ -93,11 +93,12 @@ namespace IntroductionCSharp
             }
          } while (n <= 0 || n > 20);
 
-         int sr;
-         bool success = int.TryParse(Console.ReadLine(), out sr);
+
 
          do
          {
+            int sr;
+            bool success = int.TryParse(Console.ReadLine(), out sr);
             if (sr == 0)
             {
                Console.WriteLine("Число 0 не является четным и нечетным числом");
@@ -112,7 +113,7 @@ namespace IntroductionCSharp
                Console.WriteLine("Число " + sr + " - является нечетным");
             }
 
-            if (success= false)
+            if (success = false)
             {
                Console.WriteLine("Введите целое, а не дробное число");
             }
