@@ -33,46 +33,46 @@ namespace IntroductionCSharp
          Console.WriteLine("Программа определения максимального числа из трех целых чисел");
          Console.WriteLine("--------------------------------------------------===========");
          Console.Write("Введите первое число: ");
-         int a1 = Convert.ToInt32(Console.ReadLine());
+         int c = Convert.ToInt32(Console.ReadLine());
          Console.Write("Введите второе число: ");
-         int a2 = Convert.ToInt32(Console.ReadLine());
+         int d = Convert.ToInt32(Console.ReadLine());
          Console.Write("Введите третье число: ");
-         int a3 = Convert.ToInt32(Console.ReadLine());
-         int max = a1;
-         if (a1 == a2 && a2 == a3)
+         int f = Convert.ToInt32(Console.ReadLine());
+         int max = c;
+         if (c == d && d == f)
          {
-            Console.WriteLine("Числа равны: {0} = {1} = {2}", a1, a2, a3);
+            Console.WriteLine("Числа равны: {0} = {1} = {2}", c, d, f);
          }
          else
          {
-            if (a1 == a2)
+            if (c == d)
             {
-               Console.WriteLine("Первое и второе число равны: {0} = {1}", a1, a2);
+               Console.WriteLine("Первое и второе число равны: {0} = {1}", c, d);
             }
 
-            if (a2 == a3)
+            if (d == f)
             {
-               Console.WriteLine("Второе и третье число равны: {0} = {1}", a2, a3);
+               Console.WriteLine("Второе и третье число равны: {0} = {1}", d, f);
             }
 
-            if (a1 == a3)
+            if (c == f)
             {
-               Console.WriteLine("Первое и третье число равны: {0} = {1}", a1, a3);
+               Console.WriteLine("Первое и третье число равны: {0} = {1}", c, f);
             }
 
-            if (a1 > max)
+            if (c > max)
             {
-               max = a1;
+               max = c;
             }
 
-            if (a2 > max)
+            if (d > max)
             {
-               max = a2;
+               max = d;
             }
 
-            if (a3 > max)
+            if (f > max)
             {
-               max = a3;
+               max = f;
             }
          }
 
