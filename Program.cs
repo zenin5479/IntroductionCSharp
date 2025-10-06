@@ -86,8 +86,17 @@ namespace IntroductionCSharp
 
 
          int sr;
-         bool= int.TryParse(Console.ReadLine());
          int s = 0;
+         bool success = int.TryParse(Console.ReadLine(), out sr);
+         if (success)
+         {
+            Console.WriteLine($"Converted '{value}' to {number}.");
+         }
+         else
+         {
+            Console.WriteLine($"Attempted conversion of '{value ?? "<null>"}' failed.");
+         }
+
          while (s == 0)
          {
             if (sr.Contains(","))
