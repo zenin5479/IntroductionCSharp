@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Globalization;
-using System.Text;
 
 namespace IntroductionCSharp
 {
@@ -8,49 +6,69 @@ namespace IntroductionCSharp
    {
       static void Main()
       {
-         int v; 
-         int str;
+         int v;
+         bool suk;
+         Console.Write("Введите целое число: ");
          do
          {
-            Console.WriteLine("Введите значение элемента:");
-           
-            bool suk = int.TryParse(Console.ReadLine(), out str);
+            string str = Console.ReadLine();
+            Символ пробела
+            char symbolSpace = ' ';
+            Счетчик символов
+            int symbolСount = 0;
+            Количество столбцов в строке
+            int сolumn = 0;
 
-            int.TryParse(Console.ReadLine(), out v);
-            //v = Convert.ToInt32(Console.ReadLine());
-            if (v <= -100 || v >= 100)
+            Console.WriteLine("Исходный строковый массив:");
+            Console.WriteLine(stroka);
+            while (symbolСount < stroka.Length)
             {
-               Console.WriteLine("Введено не верное значение");
+               if (symbolSpace == stroka[symbolСount])
+               {
+                  сolumn++;
+               }
+
+               if (symbolСount == stroka.Length - 1)
+               {
+                  сolumn++;
+               }
+
+               symbolСount++;
             }
-         } while (v <= -100 || v >= 100);
+
+            if (!suk)
+            {
+               Console.Write("Введите целое, а не дробное число: ");
+            }
+         } while (suk);
 
 
-         string stroka = null;
-         int[] arrayInt = { };
-         // Определение количества столбцов в строке разделением строки на подстроки по пробелу
-         // Символ пробела
-         char symbolSpace = ' ';
-         // Счетчик символов
-         int symbolСount = 0;
-         // Количество столбцов в строке
-         int сolumn = 0;
+         //string stroka = null;
+         //int[] arrayInt = { };
+         //Определение количества столбцов в строке разделением строки на подстроки по пробелу
+         //Символ пробела
+         //char symbolSpace = ' ';
+         //Счетчик символов
+         //int symbolСount = 0;
+         //Количество столбцов в строке
+         //int сolumn = 0;
 
          //Console.WriteLine("Исходный строковый массив:");
          //Console.WriteLine(stroka);
-         while (symbolСount < stroka.Length)
-         {
-            if (symbolSpace == stroka[symbolСount])
-            {
-               сolumn++;
-            }
+         //while (symbolСount < stroka.Length)
+         //{
+         //   if (symbolSpace == stroka[symbolСount])
+         //   {
+         //      сolumn++;
+         //   }
 
-            if (symbolСount == stroka.Length - 1)
-            {
-               сolumn++;
-            }
+         //   if (symbolСount == stroka.Length - 1)
+         //   {
+         //      сolumn++;
+         //   }
 
-            symbolСount++;
-         }
+         //   symbolСount++;
+         //}
 
 
          Console.WriteLine("-------------------------------------------------------------");
