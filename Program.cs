@@ -30,9 +30,13 @@ namespace IntroductionCSharp
                   symbolСount++;
                }
             }
-            if (сount == 0)
+            if (сount > 0)
             {
                Console.Write("Введите целое, а не дробное число: ");
+            }
+            if (сount == 0)
+            {
+               Console.WriteLine(stroka);
             }
          } while (сount > 0);
 
