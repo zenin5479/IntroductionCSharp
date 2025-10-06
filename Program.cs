@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Text;
 
 namespace IntroductionCSharp
@@ -7,10 +8,14 @@ namespace IntroductionCSharp
    {
       static void Main()
       {
-         int v;
+         int v; 
+         int str;
          do
          {
             Console.WriteLine("Введите значение элемента:");
+           
+            bool suk = int.TryParse(Console.ReadLine(), out str);
+
             int.TryParse(Console.ReadLine(), out v);
             //v = Convert.ToInt32(Console.ReadLine());
             if (v <= -100 || v >= 100)
