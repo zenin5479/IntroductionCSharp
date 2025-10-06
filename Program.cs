@@ -39,6 +39,11 @@ namespace IntroductionCSharp
          Console.Write("Введите третье число: ");
          int a3 = Convert.ToInt32(Console.ReadLine());
          int max = a1;
+         if (a1 == a2 && a2 == a3)
+         {
+            Console.WriteLine("Числа равны: {0} = {1}= {2}", a1, a2, a3);
+         }
+
          if (a1 > max)
          {
             max = a1;
