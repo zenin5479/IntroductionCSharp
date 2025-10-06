@@ -41,34 +41,6 @@ namespace IntroductionCSharp
          } while (сount > 0);
 
 
-         //string stroka = null;
-         //int[] arrayInt = { };
-         //Определение количества столбцов в строке разделением строки на подстроки по пробелу
-         //Символ пробела
-         //char symbolSpace = ' ';
-         //Счетчик символов
-         //int symbolСount = 0;
-         //Количество столбцов в строке
-         //int сolumn = 0;
-
-         //Console.WriteLine("Исходный строковый массив:");
-         //Console.WriteLine(stroka);
-         //while (symbolСount < stroka.Length)
-         //{
-         //   if (symbolSpace == stroka[symbolСount])
-         //   {
-         //      сolumn++;
-         //   }
-
-         //   if (symbolСount == stroka.Length - 1)
-         //   {
-         //      сolumn++;
-         //   }
-
-         //   symbolСount++;
-         //}
-
-
          Console.WriteLine("-------------------------------------------------------------");
          Console.WriteLine("Программа определения максимального числа из двух целых чисел");
          Console.WriteLine("-------------------------------------------------------------");
