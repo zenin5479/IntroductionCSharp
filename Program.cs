@@ -91,7 +91,7 @@ namespace IntroductionCSharp
          //} while (success == false);
 
 
-         while (success == false)
+         while (success == fals)
          {
             success = int.TryParse(Console.ReadLine(), out sr);
             Console.Write("Введите целое, а не дробное число: ");
