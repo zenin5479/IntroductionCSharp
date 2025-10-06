@@ -82,7 +82,20 @@ namespace IntroductionCSharp
          Console.WriteLine("Программа определения четности целого числа");
          Console.WriteLine("-------------------------------------------");
          Console.Write("Введите целое число: ");
-         string sr = Console.ReadLine();
+
+
+
+         string sr = "";
+         int.TryParse(Console.ReadLine(), out n);
+         n = Convert.ToInt32(Console.ReadLine());
+         if (n <= 0 || n > 20)
+         {
+            Console.WriteLine("Введено не верное значение");
+         }
+
+
+
+         
          int s = 0;
          while (s == 0)
          {
