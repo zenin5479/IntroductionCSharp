@@ -54,6 +54,11 @@ namespace IntroductionCSharp
             Console.WriteLine("Второе и третье число равны: {0} = {1}",  a2, a3);
          }
 
+         if (a1 == a3)
+         {
+            Console.WriteLine("Первое и третье число равны: {0} = {1}", a1, a3);
+         }
+
 
          if (a1 > max)
          {
