@@ -82,26 +82,32 @@ namespace IntroductionCSharp
          Console.WriteLine("Программа определения четности целого числа");
          Console.WriteLine("-------------------------------------------");
          Console.Write("Введите целое число: ");
-         int sr;
-         bool success = int.TryParse(Console.ReadLine(), out sr);
-         if (success)
+         do
          {
-            if (sr == 0)
+            int sr;
+            bool success = int.TryParse(Console.ReadLine(), out sr);
+            if (success)
             {
-               Console.WriteLine("Число 0 не является четным и нечетным числом");
-            }
-            else
-            {
-               if (sr % 2 == 0)
+               if (sr == 0)
                {
-                  Console.WriteLine("Число " + sr + " - является четным");
+                  Console.WriteLine("Число 0 не является четным и нечетным числом");
                }
                else
                {
-                  Console.WriteLine("Число " + sr + " - является нечетным");
+                  if (sr % 2 == 0)
+                  {
+                     Console.WriteLine("Число " + sr + " - является четным");
+                  }
+                  else
+                  {
+                     Console.WriteLine("Число " + sr + " - является нечетным");
+                  }
                }
             }
-         }
+         } while (n <= 0 || n > 20);
+
+
+
          else
          {
 
