@@ -8,32 +8,33 @@ namespace IntroductionCSharp
       {
          int v;
          bool suk;
+         //Количество столбцов в строке
+         int сount = 0;
          Console.Write("Введите целое число: ");
          do
          {
             string stroka = Console.ReadLine();
-            // Символ запятая
-            char symbolSpace = ',';
-            // Счетчик символов
+            //Символ точка
+            char symbol = '.';
+            //Счетчик символов
             int symbolСount = 0;
             if (stroka != null)
             {
                while (symbolСount < stroka.Length)
                {
-                  if (symbolSpace == stroka[symbolСount])
+                  if (symbol == stroka[symbolСount])
                   {
-                     symbolСount++;
+                     сount++;
                   }
+
+                  symbolСount++;
                }
             }
-
-
-
-            if (!suk)
+            if (сount == 0)
             {
                Console.Write("Введите целое, а не дробное число: ");
             }
-         } while (suk);
+         } while (сount > 0);
 
 
          //string stroka = null;
