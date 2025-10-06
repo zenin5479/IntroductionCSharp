@@ -87,11 +87,11 @@ namespace IntroductionCSharp
          do
          {
             success = int.TryParse(Console.ReadLine(), out sr);
-            if (success)
+            if (success == false)
             {
                Console.WriteLine("Введите целое, а не дробное число");
             }
-         } while (success == false);
+         } while (success);
 
 
          if (sr == 0)
