@@ -76,8 +76,6 @@ namespace IntroductionCSharp
             }
          }
 
-
-
          Console.WriteLine("Максимальное число: " + max);
 
          Console.WriteLine("-------------------------------------------");
