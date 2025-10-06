@@ -11,30 +11,23 @@ namespace IntroductionCSharp
          Console.Write("Введите целое число: ");
          do
          {
-            string str = Console.ReadLine();
-            Символ пробела
-            char symbolSpace = ' ';
-            Счетчик символов
+            string stroka = Console.ReadLine();
+            // Символ запятая
+            char symbolSpace = ',';
+            // Счетчик символов
             int symbolСount = 0;
-            Количество столбцов в строке
-            int сolumn = 0;
-
-            Console.WriteLine("Исходный строковый массив:");
-            Console.WriteLine(stroka);
-            while (symbolСount < stroka.Length)
+            if (stroka != null)
             {
-               if (symbolSpace == stroka[symbolСount])
+               while (symbolСount < stroka.Length)
                {
-                  сolumn++;
+                  if (symbolSpace == stroka[symbolСount])
+                  {
+                     symbolСount++;
+                  }
                }
-
-               if (symbolСount == stroka.Length - 1)
-               {
-                  сolumn++;
-               }
-
-               symbolСount++;
             }
+
+
 
             if (!suk)
             {
