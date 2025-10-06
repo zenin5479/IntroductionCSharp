@@ -93,33 +93,26 @@ namespace IntroductionCSharp
             }
          } while (n <= 0 || n > 20);
 
-
-
-         do
+         int sr;
+         bool success = int.TryParse(Console.ReadLine(), out sr);
+         while (success == false)
          {
-            int sr;
-            bool success = int.TryParse(Console.ReadLine(), out sr);
-            if (sr == 0)
-            {
-               Console.WriteLine("Число 0 не является четным и нечетным числом");
-            }
+            Console.WriteLine("Введите целое, а не дробное число");
+         }
 
-            if (sr % 2 == 0)
-            {
-               Console.WriteLine("Число " + sr + " - является четным");
-            }
-            else
-            {
-               Console.WriteLine("Число " + sr + " - является нечетным");
-            }
+         if (sr == 0)
+         {
+            Console.WriteLine("Число 0 не является четным и нечетным числом");
+         }
 
-            if (success = false)
-            {
-               Console.WriteLine("Введите целое, а не дробное число");
-            }
-
-         } while (success);
-
+         if (sr % 2 == 0)
+         {
+            Console.WriteLine("Число " + sr + " - является четным");
+         }
+         else
+         {
+            Console.WriteLine("Число " + sr + " - является нечетным");
+         }
          Console.WriteLine("-------------------------------------------------------------------------");
          Console.WriteLine("Программа вывода всех четных чисел от 1 до N, включая отрицательные числа");
          Console.WriteLine("-------------------------------------------------------------------------");
