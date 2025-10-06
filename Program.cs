@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace IntroductionCSharp
 {
@@ -84,18 +85,8 @@ namespace IntroductionCSharp
          Console.Write("Введите целое число: ");
 
 
-
-         string sr = "";
-         int.TryParse(Console.ReadLine(), out n);
-         n = Convert.ToInt32(Console.ReadLine());
-         if (n <= 0 || n > 20)
-         {
-            Console.WriteLine("Введено не верное значение");
-         }
-
-
-
-         
+         int sr;
+         bool= int.TryParse(Console.ReadLine());
          int s = 0;
          while (s == 0)
          {
