@@ -41,38 +41,42 @@ namespace IntroductionCSharp
          int max = a1;
          if (a1 == a2 && a2 == a3)
          {
-            Console.WriteLine("Числа равны: {0} = {1}= {2}", a1, a2, a3);
+            Console.WriteLine("Числа равны: {0} = {1} = {2}", a1, a2, a3);
+         }
+         else
+         {
+            if (a1 == a2)
+            {
+               Console.WriteLine("Первое и второе число равны: {0} = {1}", a1, a2);
+            }
+
+            if (a2 == a3)
+            {
+               Console.WriteLine("Второе и третье число равны: {0} = {1}", a2, a3);
+            }
+
+            if (a1 == a3)
+            {
+               Console.WriteLine("Первое и третье число равны: {0} = {1}", a1, a3);
+            }
+
+            if (a1 > max)
+            {
+               max = a1;
+            }
+
+            if (a2 > max)
+            {
+               max = a2;
+            }
+
+            if (a3 > max)
+            {
+               max = a3;
+            }
          }
 
-         if (a1 == a2)
-         {
-            Console.WriteLine("Первое и второе число равны: {0} = {1}", a1, a2);
-         }
 
-         if (a2 == a3)
-         {
-            Console.WriteLine("Второе и третье число равны: {0} = {1}",  a2, a3);
-         }
-
-         if (a1 == a3)
-         {
-            Console.WriteLine("Первое и третье число равны: {0} = {1}", a1, a3);
-         }
-
-         if (a1 > max)
-         {
-            max = a1;
-         }
-
-         if (a2 > max)
-         {
-            max = a2;
-         }
-
-         if (a3 > max)
-         {
-            max = a3;
-         }
 
          Console.WriteLine("Максимальное число: " + max);
 
