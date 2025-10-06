@@ -82,31 +82,67 @@ namespace IntroductionCSharp
          Console.WriteLine("Программа определения четности целого числа");
          Console.WriteLine("-------------------------------------------");
          Console.Write("Введите целое число: ");
-         int sr;
+         string sr = Console.ReadLine();
+         int s = 0;
+         while (s == 0)
+         {
+            if (sr.Contains(","))
+            {
+               Console.WriteLine("Введите целое, а не дробное число");
+               sr = Console.ReadLine();
+               s = 0;
+            }
+            else
+            {
+               s = 1;
+            }
+         }
+         int x = int.Parse(sr);
+         if (x == 0)
+         {
+            Console.WriteLine("Число 0 не является четным и нечетным числом");
+         }
+         else
+         {
+            if (x % 2 == 0)
+            {
+               Console.WriteLine("Число " + x + " - является четным");
+            }
+            else
+            {
+               Console.WriteLine("Число " + x + " - является нечетным");
+            }
+         }
+
+         Console.WriteLine("-------------------------------------------");
+         Console.WriteLine("Программа определения четности целого числа");
+         Console.WriteLine("-------------------------------------------");
+         Console.Write("Введите целое число: ");
+         int sr2;
          bool success;
          do
          {
-            success = int.TryParse(Console.ReadLine(), out sr);
+            success = int.TryParse(Console.ReadLine(), out sr2);
             if (success == false)
             {
                Console.WriteLine("Введите целое, а не дробное число");
             }
          } while (success);
-
-
-         if (sr == 0)
+         
+         if (sr2 == 0)
          {
             Console.WriteLine("Число 0 не является четным и нечетным числом");
          }
 
-         if (sr % 2 == 0)
+         if (sr2 % 2 == 0)
          {
-            Console.WriteLine("Число " + sr + " - является четным");
+            Console.WriteLine("Число " + sr2 + " - является четным");
          }
          else
          {
-            Console.WriteLine("Число " + sr + " - является нечетным");
+            Console.WriteLine("Число " + sr2 + " - является нечетным");
          }
+
          Console.WriteLine("-------------------------------------------------------------------------");
          Console.WriteLine("Программа вывода всех четных чисел от 1 до N, включая отрицательные числа");
          Console.WriteLine("-------------------------------------------------------------------------");
