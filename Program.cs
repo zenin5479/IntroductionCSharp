@@ -142,8 +142,8 @@ namespace IntroductionCSharp
          Console.WriteLine("Программа определения четности целого числа");
          Console.WriteLine("-------------------------------------------");
          Console.Write("Введите целое число: ");
-         int sr;
-         bool succes = int.TryParse(Console.ReadLine(), out sr);
+         int line;
+         bool succes = int.TryParse(Console.ReadLine(), out line);
          int s = 0;
          while (s == 0)
          {
@@ -154,24 +154,24 @@ namespace IntroductionCSharp
             else
             {
                Console.Write("Введите целое, а не дробное число: ");
-               succes = int.TryParse(Console.ReadLine(), out sr);
+               succes = int.TryParse(Console.ReadLine(), out line);
                s = 0;
             }
          }
 
-         if (sr == 0)
+         if (line == 0)
          {
             Console.WriteLine("Число 0 не является четным и нечетным числом");
          }
          else
          {
-            if (sr % 2 == 0)
+            if (line % 2 == 0)
             {
-               Console.WriteLine("Число " + sr + " - является четным");
+               Console.WriteLine("Число " + line + " - является четным");
             }
             else
             {
-               Console.WriteLine("Число " + sr + " - является нечетным");
+               Console.WriteLine("Число " + line + " - является нечетным");
             }
          }
 
