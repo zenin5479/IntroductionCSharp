@@ -10,30 +10,28 @@ namespace IntroductionCSharp
          Console.WriteLine("Программа определения четности числа");
          Console.WriteLine("--------------------------------------------------");
          Console.Write("Введите целое число: ");
-         string stroka = Console.ReadLine();
-
-         // 
+         string str = Console.ReadLine(); 
          // Символ точка
          char simvol = '.';
-         bool flag = true;
-         while (flag)
+         bool fla = true;
+         while (fla)
          {
-            if (stroka != null)
+            if (str != null)
             {
                // Проходим по каждому символу в строке
                int i = 0;
-               while (i < stroka.Length)
+               while (i < str.Length)
                {
                   // Сравниваем текущий символ с искомым
-                  if (stroka[i] == simvol)
+                  if (str[i] == simvol)
                   {
                      // Символ найден
-                     flag = true;
+                     fla = true;
                   }
                   else
                   {
                      // Символ не найден
-                     flag = false;
+                     fla = false;
                   }
 
                   i++;
@@ -41,13 +39,17 @@ namespace IntroductionCSharp
             }
 
             Console.Write("Введите целое, а не дробное число: ");
-            stroka = Console.ReadLine();
+            str = Console.ReadLine();
          }
 
-         //
-         int sl = 0;
+         Console.WriteLine("--------------------------------------------------");
+         Console.WriteLine("Программа определения четности числа");
+         Console.WriteLine("--------------------------------------------------");
+         Console.Write("Введите целое число: ");
+         string stroka = Console.ReadLine();
+         int flag = 0;
          // Количество символов точки в строке
-         while (sl == 0)
+         while (flag == 0)
          {
             // Символ точка
             char symbol = '.';
@@ -76,7 +78,7 @@ namespace IntroductionCSharp
 
             if (сount == 0)
             {
-               sl = 1;
+               flag = 1;
             }
          }
 
