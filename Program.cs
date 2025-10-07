@@ -33,6 +33,7 @@ namespace IntroductionCSharp
                   symbolСount++;
                }
             }
+
             if (сount > 0)
             {
                Console.Write("Введите целое, а не дробное число: ");
