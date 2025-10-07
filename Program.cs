@@ -16,30 +16,28 @@ namespace IntroductionCSharp
          bool fla = true;
          while (fla)
          {
-            if (str != null)
-            {
-               // Проходим по каждому символу в строке
-               int i = 0;
-               while (i < str.Length)
-               {
-                  // Сравниваем текущий символ с искомым
-                  if (str[i] == simvol)
-                  {
-                     // Символ найден
-                     fla = true;
-                  }
-                  else
-                  {
-                     // Символ не найден
-                     fla = false;
-                  }
 
-                  i++;
+            // Проходим по каждому символу в строке
+            int i = 0;
+            while (i < str.Length)
+            {
+               // Сравниваем текущий символ с искомым
+               if (str[i] == simvol)
+               {
+                  // Символ найден
+                  fla = true;
+                  Console.Write("Введите целое, а не дробное число: ");
+                  str = Console.ReadLine();
+               }
+               else
+               {
+                  // Символ не найден
+                  fla = false;
                }
 
-               Console.Write("Введите целое, а не дробное число: ");
-               str = Console.ReadLine();
+               i++;
             }
+
          }
 
          Console.WriteLine("--------------------------------------------------");
