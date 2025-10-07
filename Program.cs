@@ -19,9 +19,11 @@ namespace IntroductionCSharp
          // Проходим по каждому символу в строке
          if (stroka != null)
          {
-            for (int i = 0; i < stroka.Length; i++)
+            
+            int i = 0;
+            while (i < stroka.Length)
             {
-               // Сравниваем текущий символ с искомым
+                // Сравниваем текущий символ с искомым
                if (stroka[i] == simvol)
                {
                   // Символ найден
@@ -32,16 +34,15 @@ namespace IntroductionCSharp
                   // Символ не найден
                   flag = false;
                }
+
+               i++;
             }
 
-            if (flag)
+            while (flag)
             {
                Console.Write("Введите целое, а не дробное число: ");
                stroka = Console.ReadLine();
             }
-
-
-
          }
 
 
