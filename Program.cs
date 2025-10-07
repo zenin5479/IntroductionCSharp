@@ -19,6 +19,7 @@ namespace IntroductionCSharp
             char symbol = '.';
             // Счетчик символов
             int symbolСount = 0;
+            // Количество символов точки в строке
             int сount = 0;
             if (stroka != null)
             {
