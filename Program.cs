@@ -39,7 +39,8 @@ namespace IntroductionCSharp
                stroka = Console.ReadLine();
                sl = 0;
             }
-            else
+
+            if (сount == 0)
             {
                sl = 1;
             }
