@@ -10,7 +10,7 @@ namespace IntroductionCSharp
          Console.WriteLine("Программа определения четности числа");
          Console.WriteLine("--------------------------------------------------");
          Console.Write("Введите целое число: ");
-         string str = Console.ReadLine(); 
+         string str = Console.ReadLine();
          // Символ точка
          char simvol = '.';
          bool fla = true;
@@ -36,10 +36,10 @@ namespace IntroductionCSharp
 
                   i++;
                }
-            }
 
-            Console.Write("Введите целое, а не дробное число: ");
-            str = Console.ReadLine();
+               Console.Write("Введите целое, а не дробное число: ");
+               str = Console.ReadLine();
+            }
          }
 
          Console.WriteLine("--------------------------------------------------");
