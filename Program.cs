@@ -9,7 +9,7 @@ namespace IntroductionCSharp
          Console.WriteLine("--------------------------------------------------");
          Console.WriteLine("Программа определения четности числа");
          Console.WriteLine("--------------------------------------------------");
-         Console.WriteLine("Введите целое число:");
+         Console.WriteLine("Введите целое число: ");
          string stroka = Console.ReadLine();
          int sl = 0;
          // Количество символов точки в строке
