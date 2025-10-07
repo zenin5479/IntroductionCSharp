@@ -13,14 +13,13 @@ namespace IntroductionCSharp
          string stroka = Console.ReadLine();
          int sl = 0;
          // Количество символов точки в строке
-         int сount;
          while (sl == 0)
          {
             // Символ точка
             char symbol = '.';
             // Счетчик символов
             int symbolСount = 0;
-            сount = 0;
+            int сount = 0;
             if (stroka != null)
             {
                while (symbolСount < stroka.Length)
