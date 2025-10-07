@@ -16,40 +16,33 @@ namespace IntroductionCSharp
          // Символ точка
          char simvol = '.';
          bool flag = true;
-         // Проходим по каждому символу в строке
-         if (stroka != null)
+         while (flag)
          {
-            
-            int i = 0;
-            while (i < stroka.Length)
+            if (stroka != null)
             {
-                // Сравниваем текущий символ с искомым
-               if (stroka[i] == simvol)
+               // Проходим по каждому символу в строке
+               int i = 0;
+               while (i < stroka.Length)
                {
-                  // Символ найден
-                  flag = true;
-               }
-               else
-               {
-                  // Символ не найден
-                  flag = false;
-               }
+                  // Сравниваем текущий символ с искомым
+                  if (stroka[i] == simvol)
+                  {
+                     // Символ найден
+                     flag = true;
+                  }
+                  else
+                  {
+                     // Символ не найден
+                     flag = false;
+                  }
 
-               i++;
+                  i++;
+               }
             }
 
-            while (flag)
-            {
-               Console.Write("Введите целое, а не дробное число: ");
-               stroka = Console.ReadLine();
-            }
+            Console.Write("Введите целое, а не дробное число: ");
+            stroka = Console.ReadLine();
          }
-
-
-
-
-
-
 
          //
          int sl = 0;
