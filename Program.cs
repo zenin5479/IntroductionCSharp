@@ -6,6 +6,9 @@ namespace IntroductionCSharp
    {
       static void Main()
       {
+         
+         
+         
          Console.WriteLine("--------------------------------------------------");
          Console.WriteLine("Программа определения четности числа");
          Console.WriteLine("--------------------------------------------------");
