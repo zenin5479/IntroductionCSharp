@@ -14,12 +14,11 @@ namespace IntroductionCSharp
          int sl = 0;
          // Количество символов точки в строке
          int сount = 0;
-         Console.Write("Введите целое число: ");
          while (sl == 0)
          {
-            //Символ точка
+            // Символ точка
             char symbol = '.';
-            //Счетчик символов
+            // Счетчик символов
             int symbolСount = 0;
             if (stroka != null)
             {
