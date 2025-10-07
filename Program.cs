@@ -15,17 +15,14 @@ namespace IntroductionCSharp
          //Количество столбцов в строке
          int сount = 0;
          Console.Write("Введите целое число: ");
-
-
-         if (stroka != null)
+         while (sl == 0)
          {
-            while (sl == 0)
+            //Символ точка
+            char symbol = '.';
+            //Счетчик символов
+            int symbolСount = 0;
+            if (stroka != null)
             {
-               //Символ точка
-               char symbol = '.';
-               //Счетчик символов
-               int symbolСount = 0;
-
                while (symbolСount < stroka.Length)
                {
                   if (symbol == stroka[symbolСount])
@@ -35,20 +32,21 @@ namespace IntroductionCSharp
 
                   symbolСount++;
                }
-
-               if (сount > 0)
-               {
-                  Console.Write("Введите целое, а не дробное число: ");
-                  stroka = Console.ReadLine();
-                  sl = 0;
-               }
-               else
-               {
-                  sl = 1;
-               }
             }
+            if (сount > 0)
+            {
+               Console.Write("Введите целое, а не дробное число: ");
+               stroka = Console.ReadLine();
+               sl = 0;
+            }
+            else
+            {
+               sl = 1;
+            }
+         }
 
-
+         if (stroka != null)
+         {
             int x = int.Parse(stroka);
             if (x == 0)
             {
