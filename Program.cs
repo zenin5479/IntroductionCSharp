@@ -40,6 +40,22 @@ namespace IntroductionCSharp
                }
             }
 
+            int v = int.Parse(str);
+            if (v == 0)
+            {
+               Console.WriteLine("Число 0 не является четным и нечетным числом");
+            }
+            else
+            {
+               if (v % 2 == 0)
+               {
+                  Console.WriteLine("число  " + v + "  - является четным");
+               }
+               else
+               {
+                  Console.WriteLine("число  " + v + "  - является нечетным");
+               }
+            }
 
          }
 
