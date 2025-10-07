@@ -18,7 +18,6 @@ namespace IntroductionCSharp
             bool fla = true;
             while (fla)
             {
-
                // Проходим по каждому символу в строке
                int i = 0;
                while (i < str.Length)
