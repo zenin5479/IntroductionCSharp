@@ -37,7 +37,6 @@ namespace IntroductionCSharp
             {
                Console.Write("Введите целое, а не дробное число: ");
                stroka = Console.ReadLine();
-               sl = 0;
             }
 
             if (сount == 0)
