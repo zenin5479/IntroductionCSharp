@@ -42,6 +42,8 @@ namespace IntroductionCSharp
             {
                sl = 1;
             }
+
+            сount = 0;
          }
 
          if (stroka != null)
