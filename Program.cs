@@ -12,7 +12,7 @@ namespace IntroductionCSharp
          Console.WriteLine("Введите целое число:");
          string stroka = Console.ReadLine();
          int sl = 0;
-         //Количество столбцов в строке
+         // Количество символов точки в строке
          int сount = 0;
          Console.Write("Введите целое число: ");
          while (sl == 0)
