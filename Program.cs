@@ -16,8 +16,6 @@ namespace IntroductionCSharp
          // Символ точка
          char simvol = '.';
          bool flag = true;
-
-
          // Проходим по каждому символу в строке
          if (stroka != null)
          {
@@ -41,6 +39,9 @@ namespace IntroductionCSharp
                Console.Write("Введите целое, а не дробное число: ");
                stroka = Console.ReadLine();
             }
+
+
+
          }
 
 
