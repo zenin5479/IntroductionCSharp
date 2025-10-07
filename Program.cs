@@ -6,32 +6,67 @@ namespace IntroductionCSharp
    {
       static void Main()
       {
-         //Console.WriteLine("--------------------------------------------------");
-         //Console.WriteLine("Программа определения четности числа");
-         //Console.WriteLine("--------------------------------------------------");
-         //Console.WriteLine("Введите целое число:");
-         //string strs = Console.ReadLine();
-         //int sl = 0;
-         //while (sl == 0)
-         //{
-         //   if (strs.Contains(","))
-         //   {
-         //      Console.WriteLine("введите целое, а не дробное число");
-         //      strs = Console.ReadLine();
-         //      sl = 0;
-         //   }
-         //   else sl = 1;
-         //}
-         //int x = int.Parse(strs);
-         //if (x == 0)
-         //   Console.WriteLine("Число 0 не является четным и нечетным числом");
-         //else
-         //{
-         //   if (x % 2 == 0)
-         //      Console.WriteLine("число  " + x + "  - является четным");
-         //   else
-         //      Console.WriteLine("число  " + x + "  - является нечетным");
-         //}
+         Console.WriteLine("--------------------------------------------------");
+         Console.WriteLine("Программа определения четности числа");
+         Console.WriteLine("--------------------------------------------------");
+         Console.WriteLine("Введите целое число:");
+         string stroka = Console.ReadLine();
+         int sl = 0;
+         //Количество столбцов в строке
+         int сount = 0;
+         Console.Write("Введите целое число: ");
+
+
+         if (stroka != null)
+         {
+            while (sl == 0)
+            {
+               //Символ точка
+               char symbol = '.';
+               //Счетчик символов
+               int symbolСount = 0;
+
+               while (symbolСount < stroka.Length)
+               {
+                  if (symbol == stroka[symbolСount])
+                  {
+                     сount++;
+                  }
+
+                  symbolСount++;
+               }
+
+               if (сount > 0)
+               {
+                  Console.Write("Введите целое, а не дробное число: ");
+                  stroka = Console.ReadLine();
+                  sl = 0;
+               }
+               else
+               {
+                  sl = 1;
+               }
+            }
+
+
+            int x = int.Parse(stroka);
+            if (x == 0)
+            {
+               Console.WriteLine("Число 0 не является четным и нечетным числом");
+            }
+            else
+            {
+               if (x % 2 == 0)
+               {
+                  Console.WriteLine("число  " + x + "  - является четным");
+               }
+               else
+               {
+                  Console.WriteLine("число  " + x + "  - является нечетным");
+               }
+            }
+         }
+
 
          //int v;
          //bool suk;
