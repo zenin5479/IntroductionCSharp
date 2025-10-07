@@ -6,14 +6,17 @@ namespace IntroductionCSharp
    {
       static void Main()
       {
-         
-         
-         
          Console.WriteLine("--------------------------------------------------");
          Console.WriteLine("Программа определения четности числа");
          Console.WriteLine("--------------------------------------------------");
          Console.Write("Введите целое число: ");
          string stroka = Console.ReadLine();
+         // 
+         // Символ точка
+         char simvol = '.';
+         bool flag = ManualContains(stroka, simvol);
+
+         //
          int sl = 0;
          // Количество символов точки в строке
          while (sl == 0)
@@ -209,6 +212,20 @@ namespace IntroductionCSharp
          }
 
          Console.ReadKey();
+      }
+
+      public static bool ManualContains(string inputString, char characterToFind)
+      {
+         // Проходим по каждому символу в строке
+         for (int i = 0; i < inputString.Length; i++)
+         {
+            // Сравниваем текущий символ с искомым
+            if (inputString[i] == characterToFind)
+            {
+               return true; // Символ найден
+            }
+         }
+         return false; // Символ не найден после проверки всех символов
       }
    }
 }
