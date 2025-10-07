@@ -11,32 +11,36 @@ namespace IntroductionCSharp
          Console.WriteLine("--------------------------------------------------");
          Console.Write("Введите целое число: ");
          string str = Console.ReadLine();
-         // Символ точка
-         char simvol = '.';
-         bool fla = true;
-         while (fla)
+         if (str != null && str != " ")
          {
-
-            // Проходим по каждому символу в строке
-            int i = 0;
-            while (i < str.Length)
+            // Символ точка
+            char simvol = '.';
+            bool fla = true;
+            while (fla)
             {
-               // Сравниваем текущий символ с искомым
-               if (str[i] == simvol)
-               {
-                  // Символ найден
-                  fla = true;
-                  Console.Write("Введите целое, а не дробное число: ");
-                  str = Console.ReadLine();
-               }
-               else
-               {
-                  // Символ не найден
-                  fla = false;
-               }
 
-               i++;
+               // Проходим по каждому символу в строке
+               int i = 0;
+               while (i < str.Length)
+               {
+                  // Сравниваем текущий символ с искомым
+                  if (str[i] == simvol)
+                  {
+                     // Символ найден
+                     fla = true;
+                     Console.Write("Введите целое, а не дробное число: ");
+                     str = Console.ReadLine();
+                  }
+                  else
+                  {
+                     // Символ не найден
+                     fla = false;
+                  }
+
+                  i++;
+               }
             }
+
 
          }
 
