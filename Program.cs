@@ -66,39 +66,7 @@ namespace IntroductionCSharp
          }
 
 
-         //int v;
-         //bool suk;
-         ////Количество столбцов в строке
-         //int сount = 0;
-         //Console.Write("Введите целое число: ");
-         //do
-         //{
-         //   string stroka = Console.ReadLine();
-         //   //Символ точка
-         //   char symbol = '.';
-         //   //Счетчик символов
-         //   int symbolСount = 0;
-         //   if (stroka != null)
-         //   {
-         //      while (symbolСount < stroka.Length)
-         //      {
-         //         if (symbol == stroka[symbolСount])
-         //         {
-         //            сount++;
-         //         }
-
-         //         symbolСount++;
-         //      }
-         //   }
-         //   if (сount > 0)
-         //   {
-         //      Console.Write("Введите целое, а не дробное число: ");
-         //   }
-         //   if (сount == 0)
-         //   {
-         //      Console.WriteLine(stroka);
-         //   }
-         //} while (сount > 0);
+        
 
 
          Console.WriteLine("-------------------------------------------------------------");
