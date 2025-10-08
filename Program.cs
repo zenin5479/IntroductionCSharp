@@ -6,38 +6,7 @@ namespace IntroductionCSharp
    {
       static void Main()
       {
-         Console.WriteLine("--------------------------------------------------");
-         Console.WriteLine("Программа определения четности числа");
-         Console.WriteLine("--------------------------------------------------");
-         Console.Write("Введите целое число: ");
-         string str = Console.ReadLine();
-         // Символ точка
-         char simvol = '.';
-         bool fla = true;
-         while (fla)
-         {
-            // Проходим по каждому символу в строке
-            int i = 0;
-            while (i < str.Length)
-            {
-               // Сравниваем текущий символ с искомым
-               if (str[i] != simvol)
-               {
-                  // Символ не найден
-                  fla = false;
-               }
-
-               i++;
-            }
-
-            if (fla)
-            {
-               Console.Write("Введите целое, а не дробное число: ");
-               str = Console.ReadLine();
-            }
-
-         }
-
+        
          int v = int.Parse(str);
          if (v == 0)
          {
