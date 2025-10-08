@@ -26,7 +26,6 @@ namespace IntroductionCSharp
                {
                   // Символ найден
                   fla = true;
-
                }
                else
                {
