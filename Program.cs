@@ -11,7 +11,6 @@ namespace IntroductionCSharp
          Console.WriteLine("--------------------------------------------------");
          Console.Write("Введите целое число: ");
          string str = Console.ReadLine();
-
          // Символ точка
          char simvol = '.';
          bool fla = true;
