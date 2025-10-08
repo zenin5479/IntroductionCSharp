@@ -56,7 +56,6 @@ namespace IntroductionCSharp
                   Console.WriteLine("число  " + v + "  - является нечетным");
                }
             }
-
          }
 
          Console.WriteLine("--------------------------------------------------");
