@@ -6,65 +6,7 @@ namespace IntroductionCSharp
    {
       static void Main()
       {
-         Console.WriteLine("--------------------------------------------------");
-         Console.WriteLine("Программа определения четности числа");
-         Console.WriteLine("--------------------------------------------------");
-         Console.Write("Введите целое число: ");
-         string stroka = Console.ReadLine();
-         int fl = 0;
-         // Количество символов точки в строке
-         while (fl == 0)
-         {
-            // Символ точка
-            char symbol = '.';
-            // Счетчик символов
-            int symbolСount = 0;
-            // Количество символов точки в строке
-            int сount = 0;
-            if (stroka != null)
-            {
-               while (symbolСount < stroka.Length)
-               {
-                  if (symbol == stroka[symbolСount])
-                  {
-                     сount++;
-                  }
-
-                  symbolСount++;
-               }
-            }
-
-            if (сount > 0)
-            {
-               Console.Write("Введите целое, а не дробное число: ");
-               stroka = Console.ReadLine();
-            }
-
-            if (сount == 0)
-            {
-               fl = 1;
-            }
-         }
-
-         if (stroka != null)
-         {
-            int x = int.Parse(stroka);
-            if (x == 0)
-            {
-               Console.WriteLine("Число 0 не является четным и нечетным числом");
-            }
-            else
-            {
-               if (x % 2 == 0)
-               {
-                  Console.WriteLine("число  " + x + "  - является четным");
-               }
-               else
-               {
-                  Console.WriteLine("число  " + x + "  - является нечетным");
-               }
-            }
-         }
+         
 
          Console.WriteLine("-------------------------------------------------------------");
          Console.WriteLine("Программа определения максимального числа из двух целых чисел");
@@ -138,7 +80,65 @@ namespace IntroductionCSharp
 
          Console.WriteLine("Максимальное число: " + max);
 
-         
+         Console.WriteLine("--------------------------------------------------");
+         Console.WriteLine("Программа определения четности числа");
+         Console.WriteLine("--------------------------------------------------");
+         Console.Write("Введите целое число: ");
+         string stroka = Console.ReadLine();
+         int fl = 0;
+         // Количество символов точки в строке
+         while (fl == 0)
+         {
+            // Символ точка
+            char symbol = '.';
+            // Счетчик символов
+            int symbolСount = 0;
+            // Количество символов точки в строке
+            int сount = 0;
+            if (stroka != null)
+            {
+               while (symbolСount < stroka.Length)
+               {
+                  if (symbol == stroka[symbolСount])
+                  {
+                     сount++;
+                  }
+
+                  symbolСount++;
+               }
+            }
+
+            if (сount > 0)
+            {
+               Console.Write("Введите целое, а не дробное число: ");
+               stroka = Console.ReadLine();
+            }
+
+            if (сount == 0)
+            {
+               fl = 1;
+            }
+         }
+
+         if (stroka != null)
+         {
+            int x = int.Parse(stroka);
+            if (x == 0)
+            {
+               Console.WriteLine("Число 0 не является четным и нечетным числом");
+            }
+            else
+            {
+               if (x % 2 == 0)
+               {
+                  Console.WriteLine("число  " + x + "  - является четным");
+               }
+               else
+               {
+                  Console.WriteLine("число  " + x + "  - является нечетным");
+               }
+            }
+         }
          
          
          Console.WriteLine("-------------------------------------------");
