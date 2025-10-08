@@ -21,12 +21,7 @@ namespace IntroductionCSharp
             while (i < str.Length)
             {
                // Сравниваем текущий символ с искомым
-               if (str[i] == simvol)
-               {
-                  // Символ найден
-                  fla = true;
-               }
-               else
+               if (str[i] != simvol)
                {
                   // Символ не найден
                   fla = false;
