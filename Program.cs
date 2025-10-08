@@ -6,9 +6,6 @@ namespace IntroductionCSharp
    {
       static void Main()
       {
-        
-         
-
          Console.WriteLine("--------------------------------------------------");
          Console.WriteLine("Программа определения четности числа");
          Console.WriteLine("--------------------------------------------------");
@@ -141,6 +138,9 @@ namespace IntroductionCSharp
 
          Console.WriteLine("Максимальное число: " + max);
 
+         
+         
+         
          Console.WriteLine("-------------------------------------------");
          Console.WriteLine("Программа определения четности целого числа");
          Console.WriteLine("-------------------------------------------");
