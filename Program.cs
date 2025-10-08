@@ -209,18 +209,6 @@ namespace IntroductionCSharp
          Console.ReadKey();
       }
 
-      public static bool ManualContains(string inputString, char characterToFind)
-      {
-         // Проходим по каждому символу в строке
-         for (int i = 0; i < inputString.Length; i++)
-         {
-            // Сравниваем текущий символ с искомым
-            if (inputString[i] == characterToFind)
-            {
-               return true; // Символ найден
-            }
-         }
-         return false; // Символ не найден после проверки всех символов
-      }
+      
    }
 }
