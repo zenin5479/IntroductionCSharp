@@ -208,12 +208,22 @@ namespace IntroductionCSharp
             }
             else
             {
-               for (int i = -1; i >= n; i--)
+               int i = -1;
+               while (i >= n)
                {
+                  
                   if (i % 2 == 0)
                   {
                      Console.Write("{0} ", +i);
                   }
+                  
+                  i--;
+               }
+
+
+               for ( )
+               {
+                  
                }
             }
          }
