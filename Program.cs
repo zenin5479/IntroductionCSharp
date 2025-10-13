@@ -150,18 +150,18 @@ namespace IntroductionCSharp
          Console.Write("Введите целое число: ");
          int line;
          bool succes = int.TryParse(Console.ReadLine(), out line);
-         int s = 0;
-         while (s == 0)
+         int l = 0;
+         while (l == 0)
          {
             if (succes)
             {
-               s = 1;
+               l = 1;
             }
             else
             {
                Console.Write("Введите целое, а не дробное число: ");
                succes = int.TryParse(Console.ReadLine(), out line);
-               s = 0;
+               l = 0;
             }
          }
 
@@ -185,18 +185,18 @@ namespace IntroductionCSharp
          Console.WriteLine("Вывод всех четных чисел от 1 до N, включая отрицательные числа");
          Console.WriteLine("--------------------------------------------------------------");
          Console.Write("Введите число целое N: ");
-         int n = Convert.ToInt32(Console.ReadLine());
+         int m = Convert.ToInt32(Console.ReadLine());
          Console.Write("Ряд четных чисел: ");
-         if (n == 0)
+         if (m == 0)
          {
             Console.WriteLine("N должно быть отличным от 0");
          }
          else
          {
-            if (n > 0)
+            if (m > 0)
             {
                int i = 1;
-               while (i <= n)
+               while (i <= m)
                {
                   if (i % 2 == 0)
                   {
@@ -209,7 +209,7 @@ namespace IntroductionCSharp
             else
             {
                int i = -1;
-               while (i >= n)
+               while (i >= m)
                {
                   if (i % 2 == 0)
                   {
