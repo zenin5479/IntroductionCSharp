@@ -145,7 +145,7 @@ namespace IntroductionCSharp
          }
 
          Console.WriteLine("-------------------------------------------");
-         Console.WriteLine("Программа определения четности целого числа");
+         Console.WriteLine("Определение четности целого числа");
          Console.WriteLine("-------------------------------------------");
          Console.Write("Введите целое число: ");
          int line;
