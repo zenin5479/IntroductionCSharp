@@ -14,7 +14,7 @@ namespace IntroductionCSharp
       {
          Console.WriteLine("---------------------------------------------------");
          Console.WriteLine("Определение максимального числа из двух целых чисел");
-         Console.WriteLine("-------------------------------------------------------------");
+         Console.WriteLine("---------------------------------------------------");
          Console.Write("Введите первое число: ");
          int a = Convert.ToInt32(Console.ReadLine());
          Console.Write("Введите второе число: ");
