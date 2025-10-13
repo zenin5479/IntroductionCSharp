@@ -144,9 +144,9 @@ namespace IntroductionCSharp
             }
          }
 
-         Console.WriteLine("-------------------------------------------");
+         Console.WriteLine("---------------------------------");
          Console.WriteLine("Определение четности целого числа");
-         Console.WriteLine("-------------------------------------------");
+         Console.WriteLine("---------------------------------");
          Console.Write("Введите целое число: ");
          int line;
          bool succes = int.TryParse(Console.ReadLine(), out line);
