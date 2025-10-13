@@ -84,7 +84,7 @@ namespace IntroductionCSharp
 
          Console.WriteLine("Максимальное число: " + max);
 
-         Console.WriteLine("--------------------------------------------------");
+         Console.WriteLine("----------------------------------");
          Console.WriteLine("Определение четности целого числа");
          Console.WriteLine("--------------------------------------------------");
          Console.Write("Введите целое число: ");
