@@ -89,9 +89,9 @@ namespace IntroductionCSharp
          Console.WriteLine("---------------------------------");
          Console.Write("Введите целое число: ");
          string stroka = Console.ReadLine();
-         int fl = 0;
+         int flag = 0;
          // Количество символов точки в строке
-         while (fl == 0)
+         while (flag == 0)
          {
             // Символ точка
             char symbol = '.';
@@ -120,7 +120,7 @@ namespace IntroductionCSharp
 
             if (сount == 0)
             {
-               fl = 1;
+               flag = 1;
             }
          }
 
