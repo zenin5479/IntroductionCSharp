@@ -126,20 +126,20 @@ namespace IntroductionCSharp
 
          if (stroka != null)
          {
-            int x = int.Parse(stroka);
-            if (x == 0)
+            int k = int.Parse(stroka);
+            if (k == 0)
             {
                Console.WriteLine("Число 0 не является четным и нечетным числом");
             }
             else
             {
-               if (x % 2 == 0)
+               if (k % 2 == 0)
                {
-                  Console.WriteLine("число  " + x + "  - является четным");
+                  Console.WriteLine("число  " + k + "  - является четным");
                }
                else
                {
-                  Console.WriteLine("число  " + x + "  - является нечетным");
+                  Console.WriteLine("число  " + k + "  - является нечетным");
                }
             }
          }
