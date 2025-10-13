@@ -13,7 +13,7 @@ namespace IntroductionCSharp
       static void Main()
       {
          Console.WriteLine("-------------------------------------------------------------");
-         Console.WriteLine("Программа определения максимального числа из двух целых чисел");
+         Console.WriteLine("Определение максимального числа из двух целых чисел");
          Console.WriteLine("-------------------------------------------------------------");
          Console.Write("Введите первое число: ");
          int a = Convert.ToInt32(Console.ReadLine());
