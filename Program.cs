@@ -85,7 +85,7 @@ namespace IntroductionCSharp
          Console.WriteLine("Максимальное число: " + max);
 
          Console.WriteLine("--------------------------------------------------");
-         Console.WriteLine("Программа определения четности числа");
+         Console.WriteLine("Определение четности числа");
          Console.WriteLine("--------------------------------------------------");
          Console.Write("Введите целое число: ");
          string stroka = Console.ReadLine();
