@@ -36,7 +36,7 @@ namespace IntroductionCSharp
          }
 
          Console.WriteLine("-------------------------------------------------------------");
-         Console.WriteLine("Программа определения максимального числа из трех целых чисел");
+         Console.WriteLine("Определение максимального числа из трех целых чисел");
          Console.WriteLine("--------------------------------------------------===========");
          Console.Write("Введите первое число: ");
          int c = Convert.ToInt32(Console.ReadLine());
